@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS PROPIO -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- DEPENDECIAS CLIENTE SOCKET IO -->
+  <script src="/socket.io/socket.io.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <!-- Inicio Formulario Producto -->
+    <h2 style="text-align:center; margin-top:1rem">FORMULARIO DE INGRESO PRODUCTO</h2>
+    <div class="container bg-secondary text-white p-2">
+
+      <div class="mb-3">
+        <label for="title" class="form-label">PRODUCTO</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="Mario 3D" autocomplete="off">
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">PRECIO</label>
+        <input type="number" class="form-control" id="price" name="price" placeholder="100" autocomplete="off">
+      </div>
+      <div class="mb-3">
+        <label for="thumbnail" class="form-label">IMAGEN</label>
+        <input type="text" class="form-control" id="thumbnail" name="thumbnail"
+          placeholder="https://i.postimg.cc/YSvHdnkB/mb-mario.jpg"
+          autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm" id="btnForm">AGREGAR</button>
+
+      <!-- Fin Formulario Producto -->
+
+      <!-- Inicio Listado Productos -->
+
+    </div>
+    <div id="tituloListaProductos">
+      <h2 style="text-align:center; margin:1rem">PRODUCTOS</h2>
+    </div>
+    <div class="container bg-light text-dark p-2">
+      <table class="table table-striped" id="table">
+        <thead>
+          <tr>
+            <th>PRODUCTO</th>
+            <th>PRECIO</th>
+            <th>IMAGEN</th>
+          </tr>
+        </thead>
+        <tbody id="tableProd">
+          <template id="templateList">
+            <tr>
+              <td id="prodTitle"></td>
+              <td id="prodPrice"></td>
+              <td><img src="" alt="imagen" id="prodImg" style="width: 10%"></td>
+            </tr>
+          </template>
+        </tbody>
+
+      </table>
+
+      <!-- Fin Listado Productos -->
+      <!-- Alerta en caso que no haya productos cargados -->
+      <h3 id="aviso"></h3>
+    </div>
+  </div>
+
+
+  <!-- Inicio Chat -->
+  <div class="container bg-secondary text-white p-2" id="divChat">
+    <h1 style="text-align: center">CHAT</h1>
+    <div style="text-align:center">
+      <h5>Compresión realizada: <span id="compress"></span>%</h5>
+    </div>
+    <div class="container" style="display:flex; justify-content:space-between">
+      <div>
+        <div class="col-12">
+          <div id="ventana">
+            <div id="pantallaOld"></div>
+            <hr>
+            <div id="pantalla"></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <button type="submit" id="btnOldMsg" class="btn btn-warning btn-sm my-2">Mensaje Guardados</button>
+          
+          <h6 class="mt-4">Uso del Chat</h6>
+          <input type="text" id="userChat" placeholder="E-mail" class="mt-1" required>
+          <input type="text" id="userName" placeholder="Nombre" class="mt-1" required>
+          <input type="text" id="userLastName" placeholder="Apellido" class="mt-1" required>
+          <input type="number" id="userAge" placeholder="Edad" class="mt-1" required>
+          <input type="text" id="userAlias" placeholder="Alias" class="mt-1" required>
+          <input type="text" id="userAvatar" placeholder="Avatar (url)" class="mt-1" required>
+
+          <input type="text" id="messageChat" placeholder="Mensaje " class="mt-1" required> 
+          <button type="submit" id="btnChat" class="btn btn-primary">Enviar</button>
+          <a tabindex="0" class="btn btn-sm rounded-circle btn-lg btn-danger mx-3 my-1" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="¿Necesitas ayuda?" data-bs-content="Escribí la palabra administrador dentro del cuadro de mensaje" style="display: inline;"><b>?</b></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Fin Chat -->
+  <script src="/js/client.js"></script>
+  <!-- NORMALIZR -->
+  <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+
+
+</body>
+
+</html>

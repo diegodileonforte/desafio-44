@@ -1,0 +1,19 @@
+<%- include ('./layouts/header') -%>
+  <%- include ('./layouts/navbar') -%>
+    <div class="container mt-4">
+      <h3>Random</h3>
+
+
+      <form method="GET" action="/randoms/number">
+        <div class="form-group">
+          <input type="number" class="form-control" name="number" id="number" aria-describedby="numberput"
+            placeholder="Ingresar número" autocomplete="off" disabled="on">
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="btn" disabled="on">Submit</button>
+      </form>
+
+
+    </div>
+
+    <%- include ('./layouts/footer') -%>

@@ -1,0 +1,31 @@
+<%- include ('./layouts/header') -%>
+    <%- include ('./layouts/navbar') -%>
+
+        <div class="container mt-5">
+            <h6>Argumentos de entrada:</h6> <p>
+                <%= argumento %>
+            </p>
+            <h6>Nombre de la plataforma:</h6> <p>
+                <%= plataforma %>
+            </p>
+            <h6>Version de Node:</h6> <p>
+                <%= version %>
+            </p>
+            <h6>uso de memoria:</h6> <p>
+                <%= memoria %>
+            </p>
+            <h6>Path de ejecución:</h6> <p>
+                <%= path %>
+            </p>
+            <h6>Process id:</h6> <p>
+                <%= proceso %>
+            </p>
+            <h6>Carpeta:</h6> <p>
+                <%= carpeta %>
+            </p>
+            <h6>Procesadores:</h6> <p>
+                <%= procesadores %>
+            </p>
+
+        </div>
+        <%- include ('./layouts/footer') -%>

@@ -1,0 +1,59 @@
+#ventana{
+    background: white;
+    color: black;
+    padding-left: 5px;
+    width: 600px;
+    height: 400px;
+    border: 3px solid black;
+    overflow: auto;
+}
+
+#userChat{
+    display: block;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 3px;
+    border: none;
+}
+
+#messageChat{
+    display: block;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 3px;
+    border: none;
+}
+
+#btnChat{
+    margin-top: 10px;
+}
+
+#divTest{
+    border: 2px solid green;
+    width: 600px;
+    height: 300px;
+    color: black;
+}
+
+
+#clearfix {
+    clear: both;
+    float: none;
+    height: 300px;
+}
+
+#tituloListaProductos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#btnUpdate{
+    max-height: 40px;
+}
+
+#divChat {
+    margin-top: 30px;
+}
+

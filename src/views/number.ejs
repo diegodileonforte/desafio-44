@@ -1,0 +1,34 @@
+<%- include ('./layouts/header') -%>
+  <%- include ('./layouts/navbar') -%>
+    <div class="container mt-4">
+      <h3>Random</h3>
+
+
+      <form method="GET" action="/randoms/number">
+        <div class="form-group">
+          <input type="number" class="form-control" name="number" id="number" aria-describedby="numberput"
+            placeholder="Ingresar número" autocomplete="off">
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+      </form>
+
+
+      <div class="mt-4 ml-4">
+        <% if (numeros !='' ) { %>
+
+          <script>
+            let json = ('<%- JSON.stringify(numeros) %>')
+            let text = json.replace(/,/g, '<br>')
+            document.write(text)
+          </script>
+
+          <% } %>
+      </div>
+
+
+
+
+    </div>
+
+    <%- include ('./layouts/footer') -%>

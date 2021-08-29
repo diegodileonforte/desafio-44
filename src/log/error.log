@@ -1,0 +1,32 @@
+2021-08-11T23:20:46.041Z [31merror[39m: 	Cannot read property '0' of undefined
+2021-08-11T23:21:34.061Z [31merror[39m: 	Cannot read property '0' of undefined
+2021-08-11T23:21:47.983Z [31merror[39m: 	Cannot read property '0' of undefined
+2021-08-11T23:23:14.622Z [31merror[39m: 	Cannot read property '0' of undefined
+2021-08-11T23:23:15.707Z [31merror[39m: 	Cannot read property '0' of undefined
+2021-08-11T23:46:26.743Z [31merror[39m: 	Operation `productomodels.find()` buffering timed out after 10000ms
+2021-08-11T23:46:35.576Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-11T23:46:45.583Z [31merror[39m: 	Operation `productomodels.insertOne()` buffering timed out after 10000ms
+2021-08-11T23:47:03.686Z [31merror[39m: 	Operation `productomodels.find()` buffering timed out after 10000ms
+2021-08-11T23:53:39.921Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-12T00:10:12.419Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-12T00:10:59.764Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-12T00:12:35.514Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-12T00:28:35.107Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-16T03:18:21.742Z [31merror[39m: 	Error al iniciar servidor Error: listen EADDRINUSE: address already in use :::8080
+2021-08-16T03:18:39.848Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:19:38.823Z [31merror[39m: 	Error al iniciar servidor Error: listen EADDRINUSE: address already in use :::8080
+2021-08-16T03:20:06.070Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:20:16.286Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-16T03:20:16.288Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:20:52.356Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:20:54.727Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:20:55.572Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:22:27.478Z [31merror[39m: 	Error al iniciar servidor Error: listen EADDRINUSE: address already in use :::8080
+2021-08-16T03:22:34.042Z [31merror[39m: 	Cannot read property '0' of undefined
+2021-08-16T03:22:34.139Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:22:40.255Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:22:49.493Z [31merror[39m: 	Cannot read property 'status' of undefined
+2021-08-16T03:22:49.496Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:22:52.364Z [31merror[39m: 	ENOENT: no such file or directory, open 'C:\Users\DLEO\Downloads\desafio-39\src\db_persistence/files/productos.json'
+2021-08-16T03:23:56.533Z [31merror[39m: 	Error al iniciar servidor Error: listen EADDRINUSE: address already in use :::8080
+2021-08-16T03:24:58.554Z [31merror[39m: 	Error al iniciar servidor Error: listen EADDRINUSE: address already in use :::8080
